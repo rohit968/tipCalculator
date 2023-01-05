@@ -12,8 +12,37 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="calculator__container"></div>
+    <div class="wrapper">
+      <div class="container">
+        <div class="bill__total__input">
+          <h4>Bill Amount</h4>
+          <span>$</span>
+          <input type="number" id="bill__amount" placeholder="0.00" />
+        </div>
+        <div class="tip__input">
+          <h4>Tip Amount</h4>
+          <span>$</span>
+          <input type="number" id="tip__amount" placeholder="10" />
+        </div>
+        <div class="people">
+          <h4>NOT ALONE ?</h4>
+          <button id="increasePeople">+</button>
+          <span id="people">1</span>
+          <button id="decreasePeople">-</button>
+          <h3>Number of People</h3>
+        </div>
+
+        <div class="total__tip__per__person">
+          <h3>Total tip per person</h3>
+          <span id="total__tip__amount">$0.00</span>
+        </div>
+        <div class="total__amount__per__person">
+          <h3>Total amount per person</h3>
+          <span id="total__bill__amount">$0.00</span>
+        </div>
+      </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

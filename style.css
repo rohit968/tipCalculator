@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.wrapper {
   background: #8990ec;
   height: 100vh;
   display: flex;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.calculator__container {
+.container {
   height: 525px;
   width: 360px;
   color: white;
@@ -22,4 +22,75 @@
   border-radius: 1rem;
   padding: 1.2rem;
   margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container div h4 {
+  margin: 1rem 0;
+}
+
+.container span {
+  font-size: 1.2rem;
+}
+
+input {
+  background-color: #353959;
+  width: 90%;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  position: relative;
+  padding: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.total__amount__per__person,
+.total__tip__per__person {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people {
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 2rem;
+}
+
+.people h4 {
+  text-align: center;
+  position: relative;
+}
+
+.people h4:after {
+  border-bottom: 1px solid whitesmoke;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 40%;
+}
+
+.people button {
+  background-color: #8990ec;
+  border: 1px solid #8990ec;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.people h3 {
+  display: inline-block;
+  margin-left: 4rem;
 }
