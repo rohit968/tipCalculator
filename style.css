@@ -1,13 +1,13 @@
 * {
   font-family: "M PLUS Rounded 1c", Avenir Next, Helvetica, sans-serif;
-  color: white;
+  color: #252525;
   margin: 0;
   border: 0;
   box-sizing: border-box;
 }
 
 .wrapper {
-  background: #8990ec;
+  background: #94bbe9;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,8 +17,8 @@
 .container {
   height: 525px;
   width: 360px;
-  color: white;
-  background: #272639;
+  color: #252525;
+  background-color: rgb(255, 255, 255, 0.7);
   border-radius: 1rem;
   padding: 1.2rem;
   margin: 100px auto;
@@ -36,7 +36,7 @@
 }
 
 input {
-  background-color: #353959;
+  background-color: #94bbe9;
   width: 90%;
   border-radius: 20px;
   border: none;
